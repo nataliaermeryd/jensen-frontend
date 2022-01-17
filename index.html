@@ -21,7 +21,15 @@
         <input id="login-btn" type="submit" value="login" disabled>
     </form>
 
+    
+    <div id="consent-popup" class="hidden">
+        <p>By using this site you agree to our <a href="#">Terms and conditions</a>.
+        Please <a href="#" id="accept">ACCEPT</a> these before using our site.
+        </p>
+    </div>
+
     <script src="app.js"></script>
+    <script src="cookie_gdpr.js"></script>
     
     <script>
         function recaptcha_callback() {
