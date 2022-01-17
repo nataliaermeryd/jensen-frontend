@@ -11,16 +11,25 @@
 </head>
 <body>
 
-    <div class="frc-captcha" data-sitekey="FCMRP2AFG3DLSK2Q"></div>
+    <div class="frc-captcha" data-sitekey="FCMRP2AFG3DLSK2Q" data-callback="recaptcha_callback"></div>
     
     <form method="post">
         Username:<br>
         <input id="user" type="text" name="user" placeholder="user" required><br><br>
         Password:<br>
         <input id="password" type="password" name="password" placeholder="password" required><br><br>
-        <input type="submit" value="login">
+        <input id="login-btn" type="submit" value="login" disabled>
     </form>
 
     <script src="app.js"></script>
+    
+    <script>
+        function recaptcha_callback() {
+            var loginBtn = document.querySelector('#login-btn');
+            loginBtn.removeAttribute('disabled');
+        }
+
+    </script>
+    
 </body>
 </html>
