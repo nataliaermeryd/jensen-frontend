@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>jensen-frontend</title>
+    <link rel="styelsheet" href="main.css">
+    <title>Jensen-Frontend</title>
+    <script type="module" src="https://unpkg.com/friendly-challenge@0.9.0/widget.module.min.js" async defer></script>
+    <script nomodule src="https://unpkg.com/friendly-challenge@0.9.0/widget.min.js" async defer></script>
 </head>
 <body>
 
-    <form>
-        <label>username</label>
-        <input id="username" name="username" type="text"/>
-        <label>password</label>
-        <input id="password" type="password" name="password"/>
-        <input type="submit"/>
-        <script src="app.js"></script>
+    <div class="frc-captcha" data-sitekey="FCMRP2AFG3DLSK2Q"></div>
+    
+    <form method="post">
+        Username:<br>
+        <input id="user" type="text" name="user" placeholder="user" required><br><br>
+        Password:<br>
+        <input id="password" type="password" name="password" placeholder="password" required><br><br>
+        <input type="submit" value="login">
     </form>
-    
-    
+
+    <script src="app.js"></script>
 </body>
 </html>
