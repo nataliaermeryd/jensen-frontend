@@ -11,8 +11,8 @@
 </head>
 <body>
 
+<div id="login-container">
     <div class="frc-captcha" data-sitekey="FCMRP2AFG3DLSK2Q" data-callback="recaptcha_callback"></div>
-    
     <form method="post">
         Username:<br>
         <input id="user" type="text" name="user" placeholder="user" required><br><br>
@@ -20,6 +20,7 @@
         <input id="password" type="password" name="password" placeholder="password" required><br><br>
         <input id="login-btn" type="submit" value="login" disabled>
     </form>
+
 
     <div class="cookie-consent-model">
         <div class="content">
@@ -31,11 +32,18 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="secret-container" class="hidden">
+<h1>Welcome to my secret site :3</h1>
+
+</div>
     
 
 
     <script src="app.js"></script>
     <script src="cookies.js"></script>
+    <script src="cookie_gdpr.js"></script>
     
     <script>
         function recaptcha_callback() {
