@@ -1,11 +1,49 @@
-#consent-popup {
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(233, 222, 194);
+}
+
+.cookie-consent-model {
+    height: 50vh;
+    width: 100vw;
+    background-color: #fff;
     position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
-    padding: 2rem;
-    background-color: #fff;
-    opacity: 1;
-    transition: opacity .8s ease;
+    z-index: 999;
+    display: none;
+    align-items: flex-end;
+}
 
+.cookie-consent-model.active {
+    display: flex;
+}
+
+.content {
+    background-color: #fff;
+    padding: 5vw 3vw;
+    border-radius: 10px 10px 0 0;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2em;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: .8em 1.5em;
+    width: 100px;
+    margin-right: 1em;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.btn.accept {
+    background-color: rgb(130, 165, 74);
+    color: #fff;
 }

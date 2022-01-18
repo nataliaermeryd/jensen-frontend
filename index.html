@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="styelsheet" href="main.css">
+    <link rel="stylesheet" href="main.css">
     <title>Jensen-Frontend</title>
     <script type="module" src="https://unpkg.com/friendly-challenge@0.9.0/widget.module.min.js" async defer></script>
     <script nomodule src="https://unpkg.com/friendly-challenge@0.9.0/widget.min.js" async defer></script>
@@ -21,15 +21,21 @@
         <input id="login-btn" type="submit" value="login" disabled>
     </form>
 
-    
-    <div id="consent-popup" class="hidden">
-        <p>By using this site you agree to our <a href="#">Terms and conditions</a>.
-        Please <a href="#" id="accept">ACCEPT</a> these before using our site.
-        </p>
+    <div class="cookie-consent-model">
+        <div class="content">
+            <h1>ALLOW COOKIES</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id voluptatem quaerat assumenda est, magnam eligendi culpa suscipit quibusdam sit incidunt porro laudantium itaque distinctio atque ipsa velit, asperiores neque.</p>
+            <div class="btns">
+                <button class="btn cancel">cancel</button>
+                <button class="btn accept">accept</button>
+            </div>
+        </div>
     </div>
+    
+
 
     <script src="app.js"></script>
-    <script src="cookie_gdpr.js"></script>
+    <script src="cookies.js"></script>
     
     <script>
         function recaptcha_callback() {
