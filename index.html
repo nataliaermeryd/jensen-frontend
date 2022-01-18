@@ -8,16 +8,24 @@
     <title>Jensen-Frontend</title>
     <script type="module" src="https://unpkg.com/friendly-challenge@0.9.0/widget.module.min.js" async defer></script>
     <script nomodule src="https://unpkg.com/friendly-challenge@0.9.0/widget.min.js" async defer></script>
+
+    <script type="text/javascript">
+        var onloadCallback = function() {
+          alert("grecaptcha is ready!");
+        };
+      </script>
 </head>
 <body>
 
 <div id="login-container">
-    <div class="frc-captcha" data-sitekey="FCMRP2AFG3DLSK2Q" data-callback="recaptcha_callback"></div>
     <form method="post">
         Username:<br>
         <input id="user" type="text" name="user" placeholder="user" required><br><br>
         Password:<br>
         <input id="password" type="password" name="password" placeholder="password" required><br><br>
+        <div class="frc-captcha" data-sitekey="FCMRP2AFG3DLSK2Q" data-callback="recaptcha_callback"></div>
+        <br/>
+        <div class="g-recaptcha" data-sitekey="6Lcf-x4eAAAAAGyCsQPW00Xvvj4vieUdnAKcadbt"></div>
         <input id="login-btn" type="submit" value="login" disabled>
     </form>
 
@@ -50,8 +58,7 @@
             var loginBtn = document.querySelector('#login-btn');
             loginBtn.removeAttribute('disabled');
         }
-
     </script>
-    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
