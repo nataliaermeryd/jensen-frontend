@@ -1,10 +1,39 @@
 body {
+    background: linear-gradient(0.25turn, rgb(255, 189, 150), #e66465, #9198e5);
+    text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(233, 222, 194);
+    text-transform: uppercase;
+}
+
+#login-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.753);
+    margin: auto;
+    width: 20em;
+    padding: 10px;
+    text-align: center;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.431);
+}
+
+#login-btn {  
+    margin-top: 10px;
+    padding: 5px 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.content {
+    background-color: #fff;
+    padding: 5vw 3vw;
+    border-radius: 10px 10px 0 0;
 }
 
 .cookie-consent-model {
-    height: 50vh;
     width: 100vw;
     background-color: #fff;
     position: fixed;
@@ -15,25 +44,8 @@ body {
     align-items: flex-end;
 }
 
-#login-container {
-    background-color: rgba(255, 255, 255, 0.753);
-    border: solid 1px #000;
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(51, 51, 51, 0.431);
-}
-
 .cookie-consent-model.active {
     display: flex;
-}
-
-.content {
-    background-color: #fff;
-    padding: 5vw 3vw;
-    border-radius: 10px 10px 0 0;
 }
 
 .btns {
@@ -57,12 +69,7 @@ body {
     color: #fff;
 }
 
-#login-btn {
-    background-color: rgb(192, 158, 158);
-    margin-top: 10px;
-    padding: 5px 15px;
-    border: 1px solid rgb(124, 103, 103);
+h2 {
     color: #fff;
-    
-    text-transform: uppercase;
+    text-shadow: 2px 2px 3px #333;
 }

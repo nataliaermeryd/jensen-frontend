@@ -23,9 +23,11 @@
         <input id="user" type="text" name="user" placeholder="user" required><br><br>
         Password:<br>
         <input id="password" type="password" name="password" placeholder="password" required><br><br>
+        <div class="captcha-container">
         <div class="frc-captcha" data-sitekey="FCMRP2AFG3DLSK2Q" data-callback="recaptcha_callback"></div>
         <br/>
         <div class="g-recaptcha" data-sitekey="6Lcf-x4eAAAAAGyCsQPW00Xvvj4vieUdnAKcadbt"></div>
+        </div>
         <input id="login-btn" type="submit" value="login" disabled>
     </form>
 
@@ -43,7 +45,7 @@
 </div>
 
 <div id="secret-container" class="hidden">
-<h1>Welcome to my secret site :3</h1>
+<h2>Welcome to my secret site :3</h1>
 
 </div>
     
@@ -52,7 +54,8 @@
     <script src="app.js"></script>
     <script src="cookies.js"></script>
     <script src="cookie_gdpr.js"></script>
-    
+    <script src="functions.js"></script>
+
     <script>
         function recaptcha_callback() {
             var loginBtn = document.querySelector('#login-btn');
