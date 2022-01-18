@@ -69,7 +69,15 @@ body {
     color: #fff;
 }
 
+h1 {
+    text-shadow: 1px 1px 3px #333;
+}
+
 h2 {
     color: #fff;
     text-shadow: 2px 2px 3px #333;
+}
+
+.fas.fa-cookie {
+    color: rgb(177, 156, 137);
 }
