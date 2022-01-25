@@ -1,0 +1,16 @@
+acceptBtn.onclick =()=>{
+    console.log("Cookies Consent button clicked !!");
+    //setting cookie for 1 month, after 1 month cookie will be expired automatically
+    document.cookie="CookieBy=CodingSverige;max-age="+60*60*24*30;
+    if(document.cookie){
+        //if the above cookie set
+        cookieBox.classList.add("hide");
+    }else{
+    alert("Cookie can't to set!");//if cookie can´t be set the alert an error
+    }
+}
+//let's hide the cookie box if cookie is set and not expired
+let checkCookie = document.cookie.indexOf("CookieBy=CodingSverige");//checking our set cookie
+checkCookie != 1 ? cookieBox.classList.add("hide"):cookieBox.classList.remove("hide");
+
+    </script>
