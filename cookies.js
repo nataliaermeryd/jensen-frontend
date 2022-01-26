@@ -1,4 +1,4 @@
-const cookieModel = document.querySelector(".cookie-consent-model ")
+const cookieModel = document.querySelector(".cookie-consent-model")
 const cancelCookieBtn = document.querySelector(".btn.cancel")
 const acceptCookieBtn = document.querySelector(".btn.accept")
 

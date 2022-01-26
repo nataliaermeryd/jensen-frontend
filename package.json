@@ -16,6 +16,7 @@
   "author": "NES",
   "license": "ISC",
   "dependencies": {
+    "auditlog": "^0.1.0",
     "fetch": "^1.1.0"
   }
 }
